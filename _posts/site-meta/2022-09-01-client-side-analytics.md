@@ -2,7 +2,7 @@
 title: Client side analytics don't have to be creepy
 ---
 
-**Edit: [apparently they do suck though]({% post_url 2022-10-12-analytics-suck %})**
+**Edit: [apparently they do suck though]({% post_url site-meta/2022-10-12-analytics-suck %})**
 
 I did it. I broke down and added some Javascript analytics code here. I just want to have fancier stats than I get from Apache logs, okay? I promise it's not actually spooky though, and I hope to hold this forth as a demonstration that you can actually have decent real-time analytics without going full panopticon. As usual you just have to care about privacy ... like even a *little* bit.
 
