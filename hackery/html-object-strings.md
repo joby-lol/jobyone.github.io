@@ -6,4 +6,4 @@ This one's pretty nascent at the moment, but I'm building a PHP library to build
 
 The idea is to have a completely integrated and extensible system for managing building/parsing, manipulating, and rendering HTML.
 
-[url="https://github.com/jobyone/html-object-strings"/]
+[Source code on GitHub](https://github.com/jobyone/html-object-strings)
