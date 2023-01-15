@@ -1,0 +1,137 @@
+/* site title terminal doofer */
+.site-title {
+  font-size: 0;
+  font-weight: bold;
+
+  &>* {
+    font-size: $grid;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    filter: hue-rotate(45deg);
+
+    &:hover {
+      text-transform: uppercase;
+      text-decoration: underline dotted;
+      filter: none;
+    }
+  }
+
+  .site-title__user {
+    color: #f0f;
+  }
+
+  .site-title__path {
+    color: #0ff;
+  }
+
+  .site-title__cursor {
+    animation: site-title__cursor-blink 1.5s linear infinite;
+
+    &:after {
+      content: '_';
+    }
+  }
+}
+
+@keyframes site-title__cursor-blink {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 0.9;
+  }
+
+  95% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* navbar */
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav.site-nav {
+  font-size: 1.25em;
+
+  li {
+    list-style: none;
+  }
+}
+
+/* changing background */
+
+body {
+  background-color: #0cc;
+  background:
+    /* magenta */
+    linear-gradient(0deg, rgba(255, 0, 255, 0.5), rgba(255, 0, 255, 0)),
+    /* blue */
+    linear-gradient(60deg, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0.35), rgba(0, 0, 255, 0.15), rgba(0, 0, 255, 0)),
+    /* yellow */
+    linear-gradient(240deg, rgba(255, 255, 0, 1), rgba(255, 255, 0, 0)),
+    /* red */
+    linear-gradient(300deg, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0)),
+    /* cyan */
+    linear-gradient(120deg, rgba(0, 255, 255, 1), rgba(0, 255, 255, 0)),
+    /* green */
+    linear-gradient(180deg, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0));
+}
+
+#hexagon-background {
+  display: none;
+  z-index: -1;
+  background-color: transparent;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  &.activated {
+    display: block;
+  }
+}
+
+/* typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-header;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.post-meta {
+  font-family: $font-ui;
+  font-size: 0.8em;
+}
