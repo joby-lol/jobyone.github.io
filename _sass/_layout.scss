@@ -62,6 +62,7 @@ main.home-content {
   font-family: $font-ui;
   padding: $grid;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.85);
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.85));
 
   p,
   li {
