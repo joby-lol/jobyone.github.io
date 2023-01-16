@@ -5,10 +5,10 @@ body {
   row-gap: $grid;
   align-items: center;
   margin: 0;
+  font-family: $font-content;
 }
 
-header.site-header,
-footer.site-footer {
+header.site-header {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.9);
@@ -16,6 +16,9 @@ footer.site-footer {
   box-sizing: border-box;
   box-shadow: 0 0 $grid rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: $font-code;
+  margin-bottom: $grid*2;
 
   a {
     color: #0ff;
@@ -27,20 +30,21 @@ footer.site-footer {
   }
 }
 
-header.site-header {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  font-family: $font-code;
-  margin-bottom: $grid*2;
-}
-
 footer.site-footer {
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.9);
   font-family: $font-ui;
   padding: $grid;
-  margin: $grid auto;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.85);
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+  border-top: 2px solid rgba(255, 255, 255, 0.25);
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
   margin-top: $grid*2;
-  max-width: $line-length*1.5;
-  border-radius: 5px;
+
+  a {
+    color: inherit;
+  }
 }
 
 main.page-content {
