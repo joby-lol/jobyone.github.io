@@ -4,7 +4,7 @@ var grid = [];
 var all_sites = [];
 var changed = [];
 var running_step = false;
-var color_resolution = 1;
+var color_resolution = 10;
 var mouse = null;
 
 const blob_radius = 10;
@@ -56,7 +56,7 @@ onmessage = function (e) {
   }
 }
 
-setInterval(runStep, 1000 / 60);
+setInterval(runStep, 1000 / 30);
 function runStep() {
   if (running_step) return;
   running_step = true;
