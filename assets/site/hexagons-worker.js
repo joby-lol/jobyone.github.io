@@ -65,7 +65,8 @@ function runStep() {
     // average neighbor colors
     const neighbor_colors = site.neighbors.sort(Math.random)
       .map(n => getSite(n[0], n[1]))
-      .map(n => n.color).filter(c => c);
+      .filter(c => c && c.color)
+      .map(n => n.color);
     neighbor_colors.forEach(c => color = mergeColors(c, color, 1 / neighbor_colors.length))
     // apply blob colors
     if (blob_colors[site.x] && blob_colors[site.x][site.y]) {
